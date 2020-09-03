@@ -1,12 +1,11 @@
 package DTO;
 
 public class part_time_DTO {
-
 	private int no;
 	private String name;
 	private String info;
 	private int pay;
-	private String work_time;
+	private int work_time;
 	private int cnt;
 
 	public int getNo() {
@@ -41,11 +40,11 @@ public class part_time_DTO {
 		this.pay = pay;
 	}
 
-	public String getWork_time() {
+	public int getWork_time() {
 		return work_time;
 	}
 
-	public void setWork_time(String work_time) {
+	public void setWork_time(int work_time) {
 		this.work_time = work_time;
 	}
 
