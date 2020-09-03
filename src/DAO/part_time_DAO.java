@@ -165,20 +165,6 @@ public class part_time_DAO {
 		return tempList;
 	}
 
-//	public void delete(String no) {
-//		String sql = "delete from board where no=?";
-//		if (conn() != null) {
-//			PreparedStatement ppst = null;
-//			try {
-//				ppst = conn().prepareStatement(sql);
-//				ppst.setString(1, no);
-//				ppst.executeUpdate();
-//			} catch (Exception e) {
-//				// TODO: handle exception
-//			}
-//		}
-//	}
-
 	// 아르바이트 필요인원이 다 뽑힌 회사튜플 삭제
 	public void delete() {
 		String sql = "delete from part_time where cnt = 0";
