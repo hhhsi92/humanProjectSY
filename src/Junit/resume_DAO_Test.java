@@ -27,12 +27,13 @@ public class resume_DAO_Test {
 		test2.setAge(20);
 		dao.insert(test2);
 	}
+
 	@Test
-	//지원자 합격여부 변경 
+	// 지원자 합격여부 변경 //처음 default값 w (w = 대기라는 의미로 지정)
 	public void passupdate() {
 		dao.updatepass("y", "human");
 	}
-	
+
 	@Test
 	// 내 정보보기
 	public void mylist() {
@@ -45,6 +46,4 @@ public class resume_DAO_Test {
 			System.out.println("합격여부 :" + list.get(i).getPass());
 		}
 	}
-	
-
 }

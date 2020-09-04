@@ -173,7 +173,7 @@ public class part_time_DAO {
 			try {
 				st = conn.createStatement();
 				rs = st.executeQuery(sql);
-
+				System.out.println("채용공고가 마감된 목록이 삭제되었습니다.");
 			} catch (Exception e) {
 				// TODO: handle exception
 			} finally {

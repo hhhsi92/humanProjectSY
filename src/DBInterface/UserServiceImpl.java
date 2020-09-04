@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
 		for (int i = 0; i < list.size(); i++) {
 			part_time_DTO tempDTO = new part_time_DTO();
 			tempDTO = list.get(i);
-			System.out.println("----------------------------------------------");
+			System.out.println("--------------------------------------");
 			System.out.println("글번호: " + tempDTO.getNo());
 			System.out.println("회사이름: " + tempDTO.getName());
 			System.out.println("근무내용: " + tempDTO.getInfo());
@@ -66,7 +66,7 @@ public class UserServiceImpl implements UserService {
 		for (int i = 0; i < list.size(); i++) {
 			resume_DTO tempDTO = new resume_DTO();
 			tempDTO = list.get(i);
-			System.out.println("----------------------------------------------");
+			System.out.println("---------------------------------------------");
 			System.out.println(tempDTO.getUserid() + "님의 정보 입니다.");
 			System.out.println("채용지원 게시글번호: " + tempDTO.getCompany_no());
 			System.out.println("이름: " + tempDTO.getUsername());
@@ -82,7 +82,7 @@ public class UserServiceImpl implements UserService {
 		for (int i = 0; i < list.size(); i++) {
 			part_time_DTO tempDTO = new part_time_DTO();
 			tempDTO = list.get(i);
-			System.out.println("----------------------------------------------");
+			System.out.println("--------------------------------------");
 			System.out.println("글번호: " + tempDTO.getNo());
 			System.out.println("회사이름: " + tempDTO.getName());
 			System.out.println("근무내용: " + tempDTO.getInfo());

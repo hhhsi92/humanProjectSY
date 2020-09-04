@@ -35,11 +35,12 @@ public class Setting {
 	}
 
 	public void menu() {
-		System.out.println("-------------------");
+		System.out.println("--------------------------------------");
 		System.out.println("1.전체목록보기");
 		System.out.println("2.채용지원하기");
 		System.out.println("3.나의정보보기");
 		System.out.println("4.단기근무채용보기");
+		System.out.println("--------------------------------------");
 	}
 
 	public void list() {
@@ -57,5 +58,4 @@ public class Setting {
 	public void oenday_work() {
 		service.oenday_work();
 	}
-
 }

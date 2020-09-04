@@ -28,21 +28,21 @@ public class part_time_DAO_Test {
 			System.out.println("필요인원수: " + list.get(i).getCnt());
 		}
 	}
-	
+
 	@Test // 아르바이트채용정보 입력하기
 	public void insertTest() {
 		part_time_DTO test = new part_time_DTO();
-		test.setName("데일리뉴스");
-		test.setInfo("가정집 신문전달");
+		test.setName("테스트회사");
+		test.setInfo("테스트중입니다.");
 		test.setPay(8000);
-		test.setWork_time(1);
-		test.setCnt(1);
+		test.setWork_time(5);
+		test.setCnt(0);
 		dao.insert(test);
 	}
 
 	@Test // cnt 수량변경되는지 확인
 	public void update() {
-		dao.updatecnt(8); //임시로 no 입력 인원수 변경되는지 확인 
+		dao.updatecnt(8); // 임시로 no 입력 인원수 변경되는지 확인
 	}
 
 	@Test // 출력 확인
@@ -59,7 +59,7 @@ public class part_time_DAO_Test {
 			System.out.println("필요인원수: " + list.get(i).getCnt());
 		}
 	}
-	
+
 	@Test // 채용인원 다 뽑힌 회사 정보 삭제
 	public void delete() {
 		dao.delete();
